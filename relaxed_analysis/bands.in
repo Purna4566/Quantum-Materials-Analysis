@@ -1,0 +1,42 @@
+&CONTROL
+  calculation = 'bands'
+  prefix      = 'FeTe2_r'
+  outdir      = './out'
+  pseudo_dir  = './mix-sssp-pbe-eff-lib-v2/library/'
+/
+&SYSTEM
+  ibrav = 0
+  nat = 6
+  ntyp = 2
+  ecutwfc = 64
+  ecutrho = 782
+  occupations = 'fixed'
+  nbnd = 40
+/
+&ELECTRONS
+  conv_thr = 1.0d-8
+/
+ATOMIC_SPECIES
+  Fe  55.845  Fe.paw.pbe.z_16.ld1.psl.v0.2.1.upf
+  Te  127.60  Te.us.pbe.z_6.ld1.psl.v1.0.0-low.upf
+CELL_PARAMETERS angstrom
+
+  5.263855455   0.000000000   0.000000000
+  0.000000000   6.260989585   0.000000000
+  0.000000000   0.000000000   3.895341692
+ATOMIC_POSITIONS {crystal}
+
+  Fe   0.0000000000   0.0000000000  -0.0000000000
+  Fe   0.5000000000   0.5000000000   0.5000000000
+  Te   0.2273530106   0.3614823865  -0.0000000000
+  Te   0.7726469894   0.6385176135  -0.0000000000
+  Te   0.7273530106   0.1385176135   0.5000000000
+  Te   0.2726469894   0.8614823865   0.5000000000
+K_POINTS {crystal_b}
+6
+  0.0  0.0  0.0   30
+  0.5  0.0  0.0   30
+  0.0  0.0  0.0   30
+  0.0  0.5  0.0   30
+  0.0  0.0  0.0   30
+  0.0  0.0  0.5    1

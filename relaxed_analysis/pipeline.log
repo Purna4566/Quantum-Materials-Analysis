@@ -1,0 +1,19 @@
+nohup: ignoring input
+=== Step 1: SCF at relaxed geometry ===
+SCF done: !    total energy              =    -772.67482412 Ry
+=== Step 2: Band structure along Gamma-X-Gamma-Y-Gamma-Z ===
+Bands done.
+=== Step 3: Extract band gap ===
+VBM = 10.7130 eV at [0.283333, 0.0, 0.0]
+CBM = 11.0860 eV at [0.0, 0.238209, 0.0]
+Gap = 0.3730 eV
+Indirect gap
+
+=== Step 4: Dense NSCF for DOS ===
+NSCF done.
+=== Step 5: DOS and PDOS ===
+=== ALL DONE ===
+VBM = 10.7130 eV at [0.283333, 0.0, 0.0]
+CBM = 11.0860 eV at [0.0, 0.238209, 0.0]
+Gap = 0.3730 eV
+Indirect gap

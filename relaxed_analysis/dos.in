@@ -1,0 +1,8 @@
+&DOS
+  prefix = 'FeTe2_r'
+  outdir = './out'
+  fildos = 'FeTe2_r.dos'
+  Emin = -10
+  Emax = 15
+  DeltaE = 0.05
+/

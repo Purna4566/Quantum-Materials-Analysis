@@ -1,0 +1,5 @@
+&BANDS
+  prefix = 'FeTe2_r'
+  outdir = './out'
+  filband = 'FeTe2_r.bands.dat'
+/
