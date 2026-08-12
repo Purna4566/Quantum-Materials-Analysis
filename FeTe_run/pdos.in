@@ -1,0 +1,8 @@
+&PROJWFC
+  prefix = 'FeTe_r'
+  outdir = './out'
+  filpdos = 'FeTe_r.pdos'
+  Emin = -10
+  Emax = 15
+  DeltaE = 0.05
+/

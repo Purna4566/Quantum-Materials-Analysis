@@ -1,0 +1,9 @@
+nohup: ignoring input
+=== Step 1: SCF at relaxed geometry ===
+SCF done: !    total energy              =    -715.58056120 Ry
+Magnetization:      total magnetization       =     4.25 Bohr mag/cell
+=== Step 2: Dense NSCF for DOS ===
+NSCF done.
+=== Step 3: DOS and PDOS ===
+=== ALL DONE ===
+     the Fermi energy is     9.2579 ev

@@ -1,0 +1,8 @@
+&DOS
+  prefix = 'FeTe_r'
+  outdir = './out'
+  fildos = 'FeTe_r.dos'
+  Emin = -10
+  Emax = 15
+  DeltaE = 0.05
+/
