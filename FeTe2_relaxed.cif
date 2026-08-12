@@ -1,0 +1,19 @@
+data_FeTe2
+_cell_length_a    5.263855455
+_cell_length_b    6.260989585
+_cell_length_c    3.895341692
+_cell_angle_alpha 90
+_cell_angle_beta  90
+_cell_angle_gamma 90
+_symmetry_space_group_name_H-M 'P 1'
+loop_
+_atom_site_label
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+Fe1  0.0000000000  0.0000000000  0.0000000000
+Fe2  0.5000000000  0.5000000000  0.5000000000
+Te1  0.2273530106  0.3614823865  0.0000000000
+Te2  0.7726469894  0.6385176135  0.0000000000
+Te3  0.7273530106  0.1385176135  0.5000000000
+Te4  0.2726469894  0.8614823865  0.5000000000

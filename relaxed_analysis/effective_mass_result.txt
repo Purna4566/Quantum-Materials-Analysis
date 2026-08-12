@@ -1,0 +1,3 @@
+Hole effective mass (VBM, along Gamma-X): -0.6031 m0
+Electron effective mass (CBM, along Gamma-Y): 1.5068 m0
+Note: mass reported along the sampled k-path direction only, not the full anisotropic tensor.

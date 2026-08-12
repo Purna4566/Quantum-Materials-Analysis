@@ -1,0 +1,39 @@
+&CONTROL
+calculation = 'relax'
+prefix = 'FeTe2'
+outdir = './out'
+pseudo_dir = './mix-sssp-pbe-eff-lib-v2/library/'
+/
+&SYSTEM
+ibrav = 0
+nat = 6
+ntyp = 2
+ecutwfc = 64
+ecutrho = 782
+occupations = 'fixed'
+/
+&ELECTRONS
+  conv_thr = 1.0d-8
+  mixing_beta = 0.3
+/
+&IONS
+  ion_dynamics = 'bfgs'
+/
+ATOMIC_SPECIES
+Fe 55.845  Fe.paw.pbe.z_16.ld1.psl.v0.2.1.upf
+Te 127.60  Te.us.pbe.z_6.ld1.psl.v1.0.0-low.upf
+
+CELL_PARAMETERS angstrom
+  5.2845  0.0000  0.0000
+  0.0000  6.2865  0.0000
+  0.0000  0.0000  3.9058
+ATOMIC_POSITIONS {crystal}
+  Fe  0.00   0.00   0.00
+  Fe  0.50   0.50   0.50
+  Te  0.20   0.375  0.00
+  Te  0.80   0.625  0.00
+  Te  0.70   0.125  0.50
+  Te  0.30   0.875  0.50
+
+K_POINTS {automatic}
+  6 6 8  0 0 0

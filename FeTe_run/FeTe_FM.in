@@ -1,0 +1,36 @@
+&CONTROL
+  calculation = 'scf'
+  prefix      = 'FeTe_FM'
+  outdir      = './out'
+  pseudo_dir  = './mix-sssp-pbe-eff-lib-v2/library/'
+/
+&SYSTEM
+  ibrav = 0
+  nat = 4
+  ntyp = 2
+  ecutwfc = 64
+  ecutrho = 782
+  occupations = 'smearing'
+  smearing = 'marzari-vanderbilt'
+  degauss = 0.02
+  nspin = 2
+  starting_magnetization(1) = 0.5  ! ALL Fe atoms spin UP
+/
+&ELECTRONS
+  conv_thr = 1.0d-8
+  mixing_beta = 0.3
+/
+ATOMIC_SPECIES
+  Fe  55.845  Fe.paw.pbe.z_16.ld1.psl.v0.2.1.upf
+  Te  127.60  Te.us.pbe.z_6.ld1.psl.v1.0.0-low.upf
+CELL_PARAMETERS angstrom
+  3.619323004   0.000000000   0.000000000
+  0.000000000   3.619323004   0.000000000
+  0.000000000   0.000000000   6.860397297
+ATOMIC_POSITIONS {crystal}
+  Fe   0.7500000000  0.2500000000  0.0000000000
+  Fe   0.2500000000  0.7500000000  0.0000000000
+  Te   0.2500000000  0.2500000000  0.2722383488
+  Te   0.7500000000  0.7500000000 -0.2722383488
+K_POINTS {automatic}
+  10 10 8  0 0 0

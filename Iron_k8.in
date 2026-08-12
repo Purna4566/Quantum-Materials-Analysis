@@ -1,0 +1,29 @@
+&CONTROL
+  calculation = 'scf'
+  prefix      = 'Iron_k8'
+  outdir      = './out'
+  pseudo_dir  = './mix-sssp-pbe-eff-lib-v2/library/'
+/
+&SYSTEM
+  ibrav      = 3
+  celldm(1)  = 5.42
+  nat        = 1
+  ntyp       = 1
+  ecutwfc    = 64
+  ecutrho    = 782
+  occupations = 'smearing'
+  smearing    = 'marzari-vanderbilt'
+  degauss     = 0.02
+  nspin       = 2
+  starting_magnetization(1) = 0.6
+/
+&ELECTRONS
+  conv_thr = 1.0d-8
+  mixing_beta = 0.3
+/
+ATOMIC_SPECIES
+  Fe  55.845  Fe.paw.pbe.z_16.ld1.psl.v0.2.1.upf
+ATOMIC_POSITIONS {crystal}
+  Fe  0.0 0.0 0.0
+K_POINTS {automatic}
+  8 8 8  0 0 0

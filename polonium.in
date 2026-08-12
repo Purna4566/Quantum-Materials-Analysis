@@ -1,0 +1,22 @@
+
+&CONTROL 
+  calculation = 'scf', 
+  outdir = './out/', 
+  pseudo_dir = './', 
+  prefix = 'Polonium' 
+/ 
+&SYSTEM 
+  ibrav = 1, 
+  A = 3.35, 
+  nat = 1, 
+  ntyp = 1, 
+  ecutwfc = 20.0 
+/  
+&ELECTRONS
+/ 
+ATOMIC_SPECIES  
+  Po 208.98 Po.pz-vbc.UPF  
+ATOMIC_POSITIONS crystal
+  Po 0.0 0.0 0.0    
+K_POINTS automatic
+  6 6 6 0 0 0
